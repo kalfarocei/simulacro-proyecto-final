@@ -89,15 +89,17 @@ h2,
 h3,
 .h3 {
     font: 800 var(--font-text);
-    color: var(--color-text-beige);
-    line-height: 72px;
-    font-size: 72px;
+    color: var(--color-blue-main);
+    line-height: 60px;
+    font-size: 60px;
 }
 
 h4,
 .h4 {
-    font: 500 clamp(1.062rem, 5vw, 1.18rem) var(--font-text);
-    color: var(--color-text);
+      font: 800 var(--font-text);
+    color: var(--color-blue-main);
+    line-height: 60px;
+    font-size: 60px;
 }
 
 p,

@@ -34,6 +34,12 @@ img {
     object-fit: cover;
 }
 
+main {
+    display: flex;
+    flex-flow: column;
+    gap: 80px;
+}
+
 /*Componentes*/
 
 .btn {
@@ -71,9 +77,9 @@ input[type="submit"] {
 
 h1,
 .h1 {
-    font: 800 var(--font-text);
+    font: 900 var(--font-text);
     color: var(--color-blue-main);
-    line-height: 128px;
+    line-height: 100px;
     font-size: 128px;
 }
 
@@ -96,32 +102,144 @@ h3,
 
 h4,
 .h4 {
-      font: 800 var(--font-text);
+    font: 800 var(--font-text);
     color: var(--color-blue-main);
-    line-height: 60px;
-    font-size: 60px;
+    line-height: 36px;
+    font-size: 36px;
 }
 
-p,
-.p {
-    font: 400 0.9375rem var(--font-text);
-    color: var(--color-text);
+
+h5,
+.h5 {
+    font: 700 var(--font-text);
+    color: var(--color-blue-main);
+    line-height: 32px;
+    font-size: 20px;
+}
+
+h6,
+.h6 {
+    font: 800 var(--font-text);
+    color: var(--color-blue-main);
+    line-height: 16px;
+    font-size: 10px;
+
+}
+
+p {
+    font-family: var(--font-text);
 }
 
 a,
 .link,
 li {
-    font: 500 0.9375rem var(--font-text);
+    font: 800 var(--font-text);
+    color: var(--color-blue-main);
     text-decoration: none;
+    line-height: 20px;
+    font-size: 14px;
 }
 
+
 .section {
-    padding: clamp(2rem, 5vw, 4rem) 1rem;
     max-width: var(--max-width-xl);
     margin: 0 auto;
 }
 
-.container {
-    max-width: var(--max-width);
-    margin: 0 auto;
+/*. -------------- Header --------------- */
+
+
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 24px 0;
 }
+
+.header__logo {}
+
+.header__nav {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__link {}
+
+.header__button {}
+
+
+/*. -------------- Banner  --------------- */
+
+.banner {
+  max-width: var(--max-width);
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: space-between;
+  align-items: center;
+
+  & .banner__content {
+    grid-column: 1 / 7;
+  }
+
+  & .banner__image {
+    grid-column: 8 / -1;
+    position: relative; 
+  }
+
+  & .banner__image img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+  }
+
+  & .current {
+    position: absolute;
+    bottom: -20px;       
+    left: -20px;
+    background-color: var(--color-orange);
+    color: var(--color-light-white);
+    padding: 32px;
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+    text-align: center;
+  }
+}
+
+
+.banner__content {
+    display: flex;
+    flex-flow: column;
+    gap: 24px;
+}
+
+.banner__title {}
+
+.banner__text {
+   
+      font: 300 var(--font-text);
+    color: var(--color-blue-main);
+    line-height: 32px;
+    font-size: 24px;
+
+}
+
+.banner__image {}
+
+
+/*. -------------- Presentación --------------- */
+
+/*. -------------- Featured --------------- */
+
+
+/*. -------------- Membership --------------- */
+
+
+/*. -------------- Footer --------------- */
